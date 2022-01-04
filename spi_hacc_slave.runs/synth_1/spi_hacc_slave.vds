@@ -1,0 +1,265 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan  4 10:56:53 2022
+# Process ID: 10308
+# Current directory: E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.runs/synth_1
+# Command line: vivado.exe -log spi_hacc_slave.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_hacc_slave.tcl
+# Log file: E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.runs/synth_1/spi_hacc_slave.vds
+# Journal file: E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source spi_hacc_slave.tcl -notrace
+Command: synth_design -top spi_hacc_slave -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14408
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'spi_hacc_slave' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/spi_hacc_slave.v:46]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Compute/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (1#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Compute/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'digit_display' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/digit_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/clock_divider.v:23]
+	Parameter div_value bound to: 24999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'refreshcounter' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/refreshcounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'refreshcounter' (3#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/refreshcounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'anode_control' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/anode_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'anode_control' (4#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/anode_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BCD_control' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/BCD_control.v:24]
+INFO: [Synth 8-226] default block is never used [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/BCD_control.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_control' (5#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/BCD_control.v:24]
+INFO: [Synth 8-6157] synthesizing module 'BCD_to_cathode' [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/BCD_to_cathode.v:24]
+INFO: [Synth 8-226] default block is never used [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/BCD_to_cathode.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_to_cathode' (6#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/BCD_to_cathode.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'digit_display' (7#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/Display/digit_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'spi_hacc_slave' (8#1) [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/spi_hacc_slave.v:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1016.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1016.762 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/constrs_1/myConstraints.xdc]
+Finished Parsing XDC File [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/constrs_1/myConstraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/constrs_1/myConstraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/spi_hacc_slave_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/spi_hacc_slave_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1083.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1083.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1083.109 ; gain = 66.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1083.109 ; gain = 66.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1083.109 ; gain = 66.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1083.109 ; gain = 66.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP alu/result0, operation Mode is: A''*B2.
+DSP Report: register cmd_data_received_reg is absorbed into DSP alu/result0.
+DSP Report: register alu/result0 is absorbed into DSP alu/result0.
+DSP Report: register alu/result0 is absorbed into DSP alu/result0.
+DSP Report: operator alu/result0 is absorbed into DSP alu/result0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1083.109 ; gain = 66.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|spi_hacc_slave | A''*B2      | 16     | 16     | -      | -      | 32     | 2    | 1    | -    | -    | -     | 0    | 0    | 
++---------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1111.664 ; gain = 94.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1112.109 ; gain = 95.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   108|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |    65|
+|5     |LUT2    |    55|
+|6     |LUT3    |   251|
+|7     |LUT4    |    41|
+|8     |LUT5    |    38|
+|9     |LUT6    |    46|
+|10    |MUXF7   |     8|
+|11    |FDRE    |   154|
+|12    |FDSE    |     1|
+|13    |IBUF    |     4|
+|14    |OBUF    |    17|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1140.738 ; gain = 123.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1140.738 ; gain = 57.629
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1140.738 ; gain = 123.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1140.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 117 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1140.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1140.738 ; gain = 123.977
+INFO: [Common 17-1381] The checkpoint 'E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.runs/synth_1/spi_hacc_slave.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file spi_hacc_slave_utilization_synth.rpt -pb spi_hacc_slave_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  4 10:57:41 2022...

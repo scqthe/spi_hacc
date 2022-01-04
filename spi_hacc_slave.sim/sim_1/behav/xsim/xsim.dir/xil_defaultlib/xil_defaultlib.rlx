@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sim_1/new/testbench.v,1641230747,verilog,,,,testbench,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/ALU.v,1641238018,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/BCD_control.v,,ALU,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/BCD_control.v,1640981755,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/BCD_to_cathode.v,,BCD_control,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/BCD_to_cathode.v,1640982187,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/anode_control.v,,BCD_to_cathode,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/anode_control.v,1640977442,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/clock_divider.v,,anode_control,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/clock_divider.v,1640976220,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/digit_display.v,,clock_divider,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/digit_display.v,1640995027,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/refreshcounter.v,,digit_display,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/refreshcounter.v,1640981384,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/spi_hacc_slave.v,,refreshcounter,,,,,,,,
+E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sources_1/new/spi_hacc_slave.v,1641261193,verilog,,E:/FPGAProj/spi_hacc_slave/spi_hacc_slave.srcs/sim_1/new/testbench.v,,spi_hacc_slave,,,,,,,,
