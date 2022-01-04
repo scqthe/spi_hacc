@@ -7,7 +7,9 @@
 
  Tool Versions: Xilinx Vivado 2020
  
- The objective of this project is to use the Raspberry Pi 3 as an interface to send tasks to the Nexys A7 FPGA board via SPI connections. Both the RPi3 and the A7 were mounted on a plexiglass frame with a unified power supply to make the entire module portable. The A7 does still have to be connected to a PC first to initially program it with the hardware though. The project implements a basic ALU (arithmetic logic unit) implementation in FPGA with access through SPI from the Raspberry Pi 3.
+ The objective of this project is to use the Raspberry Pi 3 as an interface to send tasks to the Nexys A7 FPGA board via SPI connections. A Saleae Logic Analyzer was also used to debug signals and identify noise (and thus work to remove that in each module). Both the RPi3 and the A7 were mounted on a plexiglass frame with a unified power supply to make the entire module portable. The A7 does still have to be connected to a PC first to initially program it with the hardware though. The project implements a basic ALU (arithmetic logic unit) implementation in FPGA with access through SPI from the Raspberry Pi 3.
+ 
+ ![WhatsApp Image 2022-01-04 at 12 48 04 PM](https://user-images.githubusercontent.com/40621421/148103457-a4b58fa9-b041-4e10-a0ae-9d922f81af6f.jpeg)
  
  Between the two devices, the RPi acts as the SPI Master and the A7 acts as the SPI Slave. For this project, only the first set of SPI connections on the RPi were used (MOSI 0, MISO 0, SCLK 0, and CS 0), though a second set were available and could have been connected to the other pins on the A7. Another RPi3 was also available, though I intend to use this for future upgrades to this project.
  
