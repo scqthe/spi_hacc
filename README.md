@@ -1,5 +1,5 @@
 # spi_hacc
- Hardware Acceleration using FPGA as SPI Slave
+## Hardware Acceleration using FPGA as SPI Slave
  
  Iteration 1: Computational Hardware Acceleration in FPGA (Prototype)
  Target Device: NexysA7-100T (With Raspberry Pi 3 as the host)
