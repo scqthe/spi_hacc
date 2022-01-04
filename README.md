@@ -2,7 +2,9 @@
 ## Hardware Acceleration using FPGA as SPI Slave
  
  Iteration 1: Computational Hardware Acceleration in FPGA (Prototype)
+ 
  Target Device: NexysA7-100T (With Raspberry Pi 3 as the host)
+
  Tool Versions: Xilinx Vivado 2020
  
  The objective of this project is to use the Raspberry Pi 3 as an interface to send tasks to the Nexys A7 FPGA board via SPI connections. Both the RPi3 and the A7 were mounted on a plexiglass frame with a unified power supply to make the entire module portable. The A7 does still have to be connected to a PC first to initially program it with the hardware though. The project implements a basic ALU (arithmetic logic unit) implementation in FPGA with access through SPI from the Raspberry Pi 3.
@@ -14,14 +16,16 @@
  A Master script was written for the RPi3 to execute (in C, using the SPI library) that sends 5 bytes from the RPi to the FPGA during the MOSI cycle and reads 4 bytes during the MISO cycle. The specifics of this is shown below. The bytes sent contain two operands and an opcode that determines which mathematical operation to perform. This protocol could have been expanded to include the traditional transcation id, etc that allows for implementation of a transaction queue (future update).
  
  MOSI Cycle:
-      5 Octets - <opcode>,<operand1>,<operand2>
-      Octet1 - OPCODE - ALU Operation to perform
-      Octet2 - OPERAND1-HI [Higher 8bits of the 16-bit OPERAND1]
-      Octet3 = OPERAND1-LO [Lower 8bits of the 16-bit OPERAND1]
+ 
+      5 Octets - opcode,operand1,operand2  
+      Octet1 - OPCODE - ALU Operation to perform     
+      Octet2 - OPERAND1-HI [Higher 8bits of the 16-bit OPERAND1]    
+      Octet3 = OPERAND1-LO [Lower 8bits of the 16-bit OPERAND1]      
       Octet4 - OPERAND2-HI [Higher 8bits of the 16-bit OPERAND2]
       Octet5 = OPERAND2-LO [Lower 8bits of the 16-bit OPERAND2]
    
  MISO Cycle:
+ 
       Returns the 32bit RESULT in 4 Octets
       Octet1 - RESULT[31:24]
       Octet2 - RESULT[23:16]
